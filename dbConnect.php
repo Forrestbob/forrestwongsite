@@ -1,8 +1,8 @@
 <?php
-$servername = "192.168.1.227";
+$servername = "localhost";
 $username = "root";
 $password = "abcd1234";
-$dbname = "Raspberry Pi";
+$dbname = "my_db";
 
 // Create connection
 		/* new mysqli*/
