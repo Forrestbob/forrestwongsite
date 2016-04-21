@@ -1,7 +1,7 @@
 <?php
 $servername = "192.168.1.227";
 $username = "root";
-$password = "bluepiece49";
+$password = "abcd1234";
 $dbname = "Raspberry Pi";
 
 // Create connection
@@ -10,8 +10,8 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-}else {
+}/*else {
 	echo "Test Database Connection";
-}
+}*/
 	
 ?>
