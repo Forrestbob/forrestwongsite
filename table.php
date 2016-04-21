@@ -26,6 +26,9 @@ $result = mysqli_query($conn,"SELECT * FROM my_db.test_table");
         <th>ID</th>
         <th>First Name</th>
         <th>Last Name</th>
+		<th>Email</th>
+		<th>Phone Number</th>
+		<th>Birth Date</th>
       </tr>
     </thead>
     <tbody>
@@ -34,9 +37,12 @@ $result = mysqli_query($conn,"SELECT * FROM my_db.test_table");
 	while($row = $result->fetch_assoc()){
 		echo 
 		'<tr>
-			<td>'.$row['column1'].'</td>
-			<td>'.$row['column2'].'</td>
-			<td>'.$row['column3'].'</td>
+			<td>'.$row['id'].'</td>
+			<td>'.$row['first'].'</td>
+			<td>'.$row['last'].'</td>
+			<td>'.$row['email'].'</td>
+			<td>'.$row['phone'].'</td>
+			<td>'.$row['birth'].'</td>
 		</tr>';
 	}
 mysqli_close($conn);
