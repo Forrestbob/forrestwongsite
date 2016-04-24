@@ -9,7 +9,6 @@ if(isset($_POST['submit'])){
 	$body = $_POST['body'];
 	
 	mysqli_query($conn,"INSERT INTO my_db.messages(name, email, message) VALUES('$name','$email','$body')");
-	mysqli_error($conn);
 	
 	$mail = new PHPMailer();
 
@@ -36,7 +35,7 @@ if(isset($_POST['submit'])){
 		//echo 'Mailer error: ' . $mail->ErrorInfo;
 	}else{
 		//echo 'alert("Message successfully sent to Forrest Wong!")';
-		//echo '<script language="javascript">'.'alert("Message successfully sent to Forrest Wong!");document.location.href = "index.html";'.'</script>';
+		echo '<script language="javascript">'.'alert("Message successfully sent to Forrest Wong!");document.location.href = "index.html";'.'</script>';
 		
 	}
 	mysqli_close($conn);
