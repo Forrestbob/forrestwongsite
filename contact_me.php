@@ -55,6 +55,10 @@ function CountLeft(field, count, max) {
 
 <html>
 <title>Forrest Wong</title>
+<head>
+<link rel="icon"
+     href="images/favicon-16x16.png">
+</head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--Form styles-->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -133,7 +137,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
    <a href="#" class="w3-hover-text-grey w3-show-inline-block"><i class="fa fa-flickr"></i></a>
    <a href="#" class="w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-linkedin"></i></a>
  </div>
- <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">Raspberry Pi</a></p>
+ <p>Powered by <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a></p>
 </footer>
 
 <script>

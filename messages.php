@@ -9,6 +9,8 @@ $result = mysqli_query($conn,"SELECT * FROM my_db.messages");
 <html lang="en">
 <head>
   <title>Forrest Wong</title>
+<link rel="icon"
+     href="images/favicon-16x16.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
