@@ -3,10 +3,10 @@ include_once("PHPMailer-master/PHPMailerAutoload.php");
 include_once('dbConnect.php');
 
 if(isset($_POST['submit'])){
-	
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$body = $_POST['body'];
+
+	$name = mysqli_real_escape_string($conn,$_POST['name']);
+	$email = mysqli_real_escape_string($conn,$_POST['email']);
+	$body = mysqli_real_escape_string($conn,$_POST['body']);
 	
 	mysqli_query($conn,"INSERT INTO my_db.messages(name, email, message) VALUES('$name','$email','$body')");
 	
