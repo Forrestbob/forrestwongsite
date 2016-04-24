@@ -22,10 +22,10 @@ if(isset($_POST['submit'])){
 	$mail->Username   = "luxepropertiesatlanta@gmail.com";  // GMAIL username
 	$mail->Password   = "simmigon"; 
 	$mail->AddAddress("forrestbob2000@yahoo.com");
-	$mail->FromName = $name . "from forrestwong.xyz";
+	$mail->FromName = $name . " from forrestwong.xyz";
 
 	$mail->Subject  = "Message from " . $name;
-	$mail->Body     = "Email: " . $email . "\nName: " . $name . "\n\n" . $body;
+	$mail->Body     = "Name: " . $name . "\nEmail: " . $email . "\n\n" . $body;
 	//$mail->WordWrap = 50;
 
 	if(!$mail->Send()) {
