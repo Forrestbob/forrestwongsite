@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
 	$email = $_POST['email'];
 	$body = $_POST['body'];
 	
-	mysqli_query($conn,"INSERT INTO applicant(name, email, message) VALUES('$name','$email','$body')");
+	mysqli_query($conn,"INSERT INTO my_db.messages(name, email, message) VALUES('$name','$email','$body')");
 	
 	$mail = new PHPMailer();
 
