@@ -38,6 +38,7 @@ if(isset($_POST['submit'])){
 		echo '<script language="javascript">'.'alert("Message successfully sent to Forrest Wong!");document.location.href = "index.html";'.'</script>';
 		
 	}
+	mysqli_close($conn);
 }
  //header("location:confirmationPage.php");
 
