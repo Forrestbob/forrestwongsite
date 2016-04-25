@@ -110,15 +110,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <form role="form" method="POST" action="">
     <div class="form-group">
       <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+      <input required type="text" class="form-control" id="name" name="name" placeholder="Enter name">
     </div>
 	<div class="form-group">
       <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+      <input required type="email" class="form-control" id="email" name="email" placeholder="Enter email">
     </div>
 	<div class="form-group">
       <label for="body">Message:</label>
-      <textarea type="text" class="form-control" id="email" name="body" rows="6" maxlength="1000" onkeydown="CountLeft(this.form.body, this.form.left,1000);" onkeyup="CountLeft(this.form.body,this.form.left,1000);" ></textarea>
+      <textarea required type="text" class="form-control" id="email" name="body" rows="6" maxlength="1000" onkeydown="CountLeft(this.form.body, this.form.left,1000);" onkeyup="CountLeft(this.form.body,this.form.left,1000);" ></textarea>
 	  <div align="right">Characters left: <input class="form-group" readonly type="text" name="left" size="3" maxlength="4" value="1000"></div>
 	</div>
 	<button type="submit" class="btn btn-default" name="submit">Send</button>
