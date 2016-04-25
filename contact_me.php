@@ -10,12 +10,6 @@ if(isset($_POST['submit'])){
 	
 	mysqli_query($conn,"INSERT INTO my_db.messages(name, email, message) VALUES('$name','$email','$body')");
 	
-	$to = "4042164620@tmomail.net";
-	$from = "luxepropertiesatlanta@gmail.com";
-	$message = "Message from forrestwong.xyz";
-	$headers = "From: " . $name;
-	mail($to, "", $message, $headers);
-	
 	$mail = new PHPMailer();
 
 	$mail->IsSMTP();  // telling the class to use SMTP
